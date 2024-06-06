@@ -5,7 +5,7 @@ jest.mock('../http');
 beforeEach(() => {
     jest.resetAllMocks();
 });
-test('get level', () => {
+test('http get have been called with correct argument', () => {
     httpGet.mockReturnValue(JSON.stringify({}));
     getLevel(1);
     expect(httpGet).toHaveBeenCalledWith('https://server/user/1');
