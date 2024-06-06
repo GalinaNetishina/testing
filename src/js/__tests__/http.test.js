@@ -1,5 +1,5 @@
 import getLevel from '../getLevel';
-import httpGet from '../http';
+import httpGet from '../http';``
 jest.mock('../http');
 
 beforeEach(() => {
